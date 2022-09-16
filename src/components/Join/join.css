@@ -1,0 +1,66 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.left_j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.left_j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid ;
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.left_j > div{
+    display: flex;
+    gap: 1rem;
+}
+.right_j {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.email_container {
+    display: flex;
+    gap: 3rem;
+    background-color: grey;
+    padding: 1rem 2rem;
+    
+}
+.email_container> input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgreyz);
+}
+::placeholder {
+    color: var(--lightgrey);
+}
+
+.btn{
+    background-color: var(--orange);
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .join{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .left_j{
+        flex-direction: column;
+        font-size: x-large;
+    }
+    .right_j{
+        padding: 2rem;
+    }
+}
